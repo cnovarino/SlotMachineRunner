@@ -1,0 +1,136 @@
+{
+  "reels": [
+    {
+      "values": [
+        {
+          "code": "orange"
+        },
+        {
+          "code": "star"
+        },
+        {
+          "code": "cherry"
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "code": "lemon"
+        },
+        {
+          "code": "bannana"
+        },
+        {
+          "code": "star"
+        },
+        {
+          "code": "orange"
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "code": "lemon"
+        },
+        {
+          "code": "bannana"
+        },
+        {
+          "code": "star"
+        },
+        {
+          "code": "orange"
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "code": "lemon"
+        },
+        {
+          "code": "bannana"
+        },
+        {
+          "code": "star"
+        },
+        {
+          "code": "orange"
+        }
+      ]
+    },
+    {
+      "values": [
+        {
+          "code": "star"
+        },
+        {
+          "code": "bannana"
+        },
+        {
+          "code": "cherry"
+        },
+        {
+          "code": "orange"
+        }
+      ]
+    }
+  ],
+  "reelValues": [
+    {
+      "code": "apple",
+      "prize": 1
+    },
+    {
+      "code": "orange",
+      "prize": 2
+    },
+    {
+      "code": "bannana",
+      "prize": 3
+    },
+    {
+      "code": "cherry",
+      "prize": 4
+    },
+    {
+      "code": "lemon",
+      "prize": 5
+    },
+    {
+      "code": "star",
+      "prize": 10
+    }
+  ],
+  "multipliers": [
+    {
+      "reels": 3,
+      "multipliers": [
+        0,
+        5,
+        10
+      ]
+    },
+    {
+      "reels": 4,
+      "multipliers": [
+        0,
+        0,
+        10,
+        20
+      ]
+    },
+    {
+      "reels": 5,
+      "multipliers": [
+        0,
+        0,
+        5,
+        20,
+        30
+      ]
+    }
+  ]
+}
