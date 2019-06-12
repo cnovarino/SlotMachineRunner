@@ -2,135 +2,93 @@
   "reels": [
     {
       "values": [
-        {
-          "code": "orange"
-        },
-        {
-          "code": "star"
-        },
-        {
-          "code": "cherry"
-        }
+        {"code": "banana"},
+        {"code": "cherry"},
+        {"code": "grape"},
+        {"code": "lemon"},
+        {"code": "orange"},
+        {"code": "7"}
       ]
     },
     {
       "values": [
-        {
-          "code": "lemon"
-        },
-        {
-          "code": "bannana"
-        },
-        {
-          "code": "star"
-        },
-        {
-          "code": "orange"
-        }
+        {"code": "lemon"},
+        {"code": "banana"},
+        {"code": "cherry"},
+        {"code": "grape"},
+        {"code": "7"},
+        {"code": "orange"}
       ]
     },
     {
       "values": [
-        {
-          "code": "lemon"
-        },
-        {
-          "code": "bannana"
-        },
-        {
-          "code": "star"
-        },
-        {
-          "code": "orange"
-        }
+        {"code": "7"},
+        {"code": "cherry"},
+        {"code": "grape"},
+        {"code": "orange"},
+        {"code": "lemon"},
+        {"code": "banana"}
       ]
     },
     {
       "values": [
-        {
-          "code": "lemon"
-        },
-        {
-          "code": "bannana"
-        },
-        {
-          "code": "star"
-        },
-        {
-          "code": "orange"
-        }
+        {"code": "cherry"},
+        {"code": "banana"},
+        {"code": "lemon"},
+        {"code": "grape"},
+        {"code": "7"},
+        {"code": "orange"}
       ]
     },
     {
       "values": [
-        {
-          "code": "star"
-        },
-        {
-          "code": "bannana"
-        },
-        {
-          "code": "cherry"
-        },
-        {
-          "code": "orange"
-        }
+        {"code": "lemon"},
+        {"code": "cherry"},
+        {"code": "banana"},
+        {"code": "7"},
+        {"code": "orange"},
+        {"code": "grape"}
       ]
     }
   ],
   "reelValues": [
     {
-      "code": "apple",
+      "code": "banana",
       "prize": 1
     },
     {
-      "code": "orange",
+      "code": "cherry",
       "prize": 2
     },
     {
-      "code": "bannana",
+      "code": "grape",
       "prize": 3
     },
     {
-      "code": "cherry",
+      "code": "lemon",
       "prize": 4
     },
     {
-      "code": "lemon",
+      "code": "orange",
       "prize": 5
     },
     {
-      "code": "star",
+      "code": "7",
       "prize": 10
     }
   ],
   "multipliers": [
     {
       "reels": 3,
-      "multipliers": [
-        0,
-        5,
-        10
-      ]
+      "multipliers": [0,5,10]
     },
     {
       "reels": 4,
-      "multipliers": [
-        0,
-        0,
-        10,
-        20
-      ]
+      "multipliers": [0,0,10,20]
     },
     {
       "reels": 5,
-      "multipliers": [
-        0,
-        0,
-        5,
-        20,
-        30
-      ]
+      "multipliers": [0,0,5,20,30]
     }
   ]
 }

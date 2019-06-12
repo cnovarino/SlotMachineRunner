@@ -1,13 +1,15 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
-import components.Logger;
 import components.Reel;
 import components.SlotMachine;
 import exceptions.ConfigFileNotFoundException;
 import generators.FruitsPrizeGenerator;
 import models.ReelValue;
+import slotmachine.ui.view.IReelAdapter;
+import slotmachine.ui.view.IView;
 import slotmachine.ui.view.SlotMachineViewFacade;
+import views.FruitView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,11 +43,19 @@ public class Main {
 
             slotMachine.setiDisplayHandler(SlotMachineViewFacade.getDisplayHandler());
             slotMachine.setiPrizeHandler(SlotMachineViewFacade.getPrizeHandler());
+            slotMachine.setReelHandler(SlotMachineViewFacade.getReelHandler());
 
-            SlotMachineViewFacade.initReels(slotMachine.getReelManager().getReels().size());
+            SlotMachineViewFacade.setReelAdapter(new IReelAdapter() {
+                @Override
+                public int getCount() {
+                    return reels.size();
+                }
 
-            slotMachine.setiReelsHandler(SlotMachineViewFacade.getReelsHandler());
-
+                @Override
+                public IView getView(int position) {
+                    return new FruitView(reels.get(position).getCurrentValue());
+                }
+            });
 
             SlotMachineViewFacade.show();
 
