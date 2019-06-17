@@ -1,13 +1,10 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
 import exceptions.ConfigFileNotFoundException;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
 
 public class Settings {
 
@@ -15,11 +12,11 @@ public class Settings {
 
     private Gson gson;
     private JsonObject settings;
-    private String config_path;
+    private String configPath;
 
-    public static Settings getInstance(String config_path) throws ConfigFileNotFoundException {
+    public static Settings getInstance(String configPath) throws ConfigFileNotFoundException {
         if(instance == null) {
-            instance = new Settings(config_path);
+            instance = new Settings(configPath);
             try {
                 instance.loadConfig();
             } catch (ConfigFileNotFoundException e) {
@@ -30,8 +27,8 @@ public class Settings {
         return instance;
     }
 
-    private Settings(String config_path) {
-        this.config_path = config_path;
+    private Settings(String configPath) {
+        this.configPath = configPath;
         gson = new Gson();
     }
 
@@ -41,7 +38,7 @@ public class Settings {
 
     private void loadConfig() throws ConfigFileNotFoundException {
         try {
-            JsonReader reader = new JsonReader(new FileReader("resources/" + config_path));
+            JsonReader reader = new JsonReader(new FileReader("resources/" + configPath));
             settings = gson.fromJson(reader,JsonObject.class);
         } catch (FileNotFoundException e) {
             throw new ConfigFileNotFoundException("No se puede acceder al archivo de configuracion. Se carga configuracion por defecto.");

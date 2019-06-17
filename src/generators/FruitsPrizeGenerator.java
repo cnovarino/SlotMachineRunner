@@ -31,6 +31,10 @@ public class FruitsPrizeGenerator implements IPrizeGenerator {
         this.reelsValues = reelsValues;
     }
 
+    public FruitsMultiplier getMultiplier() {
+        return multiplier;
+    }
+
     public void loadConfig(JsonArray multipliers){
         Gson gson = new Gson();
         List<FruitsMultiplier> temp = gson.fromJson(multipliers,new TypeToken<List<FruitsMultiplier>>(){}.getType());

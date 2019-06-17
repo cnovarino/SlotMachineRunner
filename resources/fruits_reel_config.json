@@ -2,9 +2,6 @@
   "reels": [
     {
       "values": [
-        {"code": "banana"},
-        {"code": "cherry"},
-        {"code": "grape"},
         {"code": "lemon"},
         {"code": "orange"},
         {"code": "7"}
@@ -14,10 +11,8 @@
       "values": [
         {"code": "lemon"},
         {"code": "banana"},
-        {"code": "cherry"},
         {"code": "grape"},
-        {"code": "7"},
-        {"code": "orange"}
+        {"code": "7"}
       ]
     },
     {
@@ -28,26 +23,6 @@
         {"code": "orange"},
         {"code": "lemon"},
         {"code": "banana"}
-      ]
-    },
-    {
-      "values": [
-        {"code": "cherry"},
-        {"code": "banana"},
-        {"code": "lemon"},
-        {"code": "grape"},
-        {"code": "7"},
-        {"code": "orange"}
-      ]
-    },
-    {
-      "values": [
-        {"code": "lemon"},
-        {"code": "cherry"},
-        {"code": "banana"},
-        {"code": "7"},
-        {"code": "orange"},
-        {"code": "grape"}
       ]
     }
   ],
@@ -81,14 +56,6 @@
     {
       "reels": 3,
       "multipliers": [0,5,10]
-    },
-    {
-      "reels": 4,
-      "multipliers": [0,0,10,20]
-    },
-    {
-      "reels": 5,
-      "multipliers": [0,0,5,20,30]
     }
   ]
 }

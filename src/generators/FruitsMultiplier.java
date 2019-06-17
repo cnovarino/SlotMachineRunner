@@ -16,6 +16,10 @@ public class FruitsMultiplier {
         return multipliers;
     }
 
+    public int getReels() {
+        return reels;
+    }
+
     @Override
     public String toString() {
         return "Multiplier{" +
